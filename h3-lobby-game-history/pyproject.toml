@@ -1,0 +1,30 @@
+[project]
+authors = [
+    {name = "Rivit"},
+]
+name = "h3ranking"
+description = "h3 ranking"
+version = "0.1.0"
+package-mode = false
+
+requires-python = "==3.13.*"
+dependencies = [
+# TODO: get rid of pwntools
+    "pwntools==4.12.0",
+    "psycopg[c]==3.2.1",
+    "sqlalchemy[asyncio]==2.0.31",
+    "fastapi==0.115.0",
+    "uvicorn==0.30.1",
+    "slowapi==0.1.9",
+    "sqlmodel==0.0.21",
+    "dataclass-wizard==0.39.1",
+    "pyyaml==6.0.2",
+]
+
+#[tool.uv]
+#dependency-groups.dev = [
+#    "pytest==8.3.3",
+#    "pytest-cov==5.0.0",
+#    "alembic==1.13.3",
+#    "ruff==0.6.8",
+#]
